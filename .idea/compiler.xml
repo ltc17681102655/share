@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="rocketmq-client" />
+        <module name="rocketmq-store" />
+        <module name="rocketmq-openmessaging" />
+        <module name="rocketmq-logging" />
+        <module name="rocketmq-acl" />
+        <module name="rocketmq-logappender" />
+        <module name="rocketmq-common" />
+        <module name="rocketmq-broker" />
+        <module name="rocketmq-test" />
+        <module name="rocketmq-srvutil" />
+        <module name="rocketmq-remoting" />
+        <module name="rocketmq-filter" />
+        <module name="rocketmq-tools" />
+        <module name="rocketmq-namesrv" />
+        <module name="rocketmq-example" />
+      </profile>
+      <profile name="Annotation profile for rocketmq-dashboard" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar" />
+        </processorPath>
+        <module name="rocketmq-dashboard" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="rocketmq-acl" target="1.8" />
+      <module name="rocketmq-all" target="1.8" />
+      <module name="rocketmq-broker" target="1.8" />
+      <module name="rocketmq-client" target="1.6" />
+      <module name="rocketmq-common" target="1.6" />
+      <module name="rocketmq-dashboard" target="1.8" />
+      <module name="rocketmq-distribution" target="1.8" />
+      <module name="rocketmq-example" target="1.8" />
+      <module name="rocketmq-filter" target="1.8" />
+      <module name="rocketmq-logappender" target="1.8" />
+      <module name="rocketmq-logging" target="1.6" />
+      <module name="rocketmq-namesrv" target="1.8" />
+      <module name="rocketmq-openmessaging" target="1.8" />
+      <module name="rocketmq-remoting" target="1.6" />
+      <module name="rocketmq-srvutil" target="1.8" />
+      <module name="rocketmq-store" target="1.8" />
+      <module name="rocketmq-test" target="1.8" />
+      <module name="rocketmq-tools" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

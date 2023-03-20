@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/rocketmq-dashboard/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-dashboard/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/acl/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/acl/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/broker/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/broker/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/distribution/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/distribution/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/example/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/example/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/filter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/filter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/logappender/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/logappender/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/logging/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/logging/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/namesrv/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/namesrv/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/openmessaging/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/openmessaging/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/remoting/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/remoting/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/srvutil/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/srvutil/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/store/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/store/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/test/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/tools/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/tools/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
