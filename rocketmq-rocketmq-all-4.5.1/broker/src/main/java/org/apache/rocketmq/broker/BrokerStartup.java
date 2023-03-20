@@ -61,7 +61,7 @@ public class BrokerStartup {
     public static void main(String[] args) throws Exception {
         HashMap<String, String> map = new HashMap<>();
         map.put("ROCKETMQ_HOME", "/Users/liutongchun/share/rocketmq-rocketmq-all-4.5.1/namesrv");
-        map.put("NAMESRV_ADDR", "10.254.10.114:9876");
+        map.put("NAMESRV_ADDR", "localhost:9876");
         setEnv(map);
         start(createBrokerController(args));
     }
