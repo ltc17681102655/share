@@ -51,7 +51,7 @@ public class Producer {
         producer.setNamesrvAddr("localhost:9876");
         producer.start();
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 1; i++) {
             try {
 
                 /*

@@ -32,7 +32,8 @@ import org.apache.rocketmq.remoting.exception.RemotingException;
 public class Producer {
     public static void main(String[] args) throws UnsupportedEncodingException {
         try {
-            MQProducer producer = new DefaultMQProducer("please_rename_unique_group_name");
+            DefaultMQProducer producer = new DefaultMQProducer("please_rename_unique_group_name");
+            producer.setNamesrvAddr("localhost:9876");
             producer.start();
 
             String[] tags = new String[] {"TagA", "TagB", "TagC", "TagD", "TagE"};

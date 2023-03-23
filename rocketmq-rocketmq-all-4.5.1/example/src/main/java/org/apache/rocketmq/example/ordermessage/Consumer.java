@@ -32,7 +32,7 @@ public class Consumer {
         DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("please_rename_unique_group_name_3");
 
         consumer.setConsumeFromWhere(ConsumeFromWhere.CONSUME_FROM_FIRST_OFFSET);
-
+        consumer.setNamesrvAddr("localhost:9876");
         consumer.subscribe("TopicTest", "TagA || TagC || TagD");
 
         consumer.registerMessageListener(new MessageListenerOrderly() {
