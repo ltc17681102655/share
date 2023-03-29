@@ -1,0 +1,18 @@
+#build
+./gradlew clean build
+
+#下载tomcat
+https://tomcat.apache.org/download-80.cgi#8.5.87
+
+#启动tomcat
+进入bin目录 sudo sh startup.sh
+
+#配置tomcat/bin目录下setclasspath.sh文件
+添加如下:
+export JAVA_HOME=/Users/liutongchun/Library/Java/JavaVirtualMachines/corretto-1.8.0_352/Contents/Home
+export JRE_HOME=/Users/liutongchun/Library/Java/JavaVirtualMachines/corretto-1.8.0_352/Contents/Home/jre
+
+#tomcat启动war
+cp ./eureka-server/build/libs/eureka-server-XXX-SNAPSHOT.war $TOMCAT_HOME/webapps/eureka.war
+
+访问: http://localhost:8080/eureka
