@@ -49,30 +49,32 @@ import java.util.concurrent.ConcurrentHashMap;
  * @since 1.2.0
  */
 public class AuthFilter implements Filter {
-    
-    @Autowired
+
+    //todo 添加了required = false
+    @Autowired(required = false)
     private AuthConfigs authConfigs;
-    
-    @Autowired
+
+    //todo 添加了required = false
+    @Autowired(required = false)
     private AuthManager authManager;
-    
+
     @Autowired
     private ControllerMethodsCache methodsCache;
-    
+
     private Map<Class<? extends ResourceParser>, ResourceParser> parserInstance = new ConcurrentHashMap<>();
-    
+
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
             throws IOException, ServletException {
-        
+
         if (!authConfigs.isAuthEnabled()) {
             chain.doFilter(request, response);
             return;
         }
-        
+
         HttpServletRequest req = (HttpServletRequest) request;
         HttpServletResponse resp = (HttpServletResponse) response;
-        
+
         if (authConfigs.isEnableUserAgentAuthWhite()) {
             String userAgent = WebUtils.getUserAgent(req);
             if (StringUtils.startsWith(userAgent, Constants.NACOS_SERVER_HEADER)) {
@@ -94,38 +96,38 @@ public class AuthFilter implements Filter {
                             + " and `nacos.core.auth.server.identity.value`, or open `nacos.core.auth.enable.userAgentAuthWhite`");
             return;
         }
-        
+
         try {
-            
+
             Method method = methodsCache.getMethod(req);
-            
+
             if (method == null) {
                 chain.doFilter(request, response);
                 return;
             }
-            
+
             if (method.isAnnotationPresent(Secured.class) && authConfigs.isAuthEnabled()) {
-                
+
                 if (Loggers.AUTH.isDebugEnabled()) {
                     Loggers.AUTH.debug("auth start, request: {} {}", req.getMethod(), req.getRequestURI());
                 }
-                
+
                 Secured secured = method.getAnnotation(Secured.class);
                 String action = secured.action().toString();
                 String resource = secured.resource();
-                
+
                 if (StringUtils.isBlank(resource)) {
                     ResourceParser parser = getResourceParser(secured.parser());
                     resource = parser.parseName(req);
                 }
-                
+
                 if (StringUtils.isBlank(resource)) {
                     // deny if we don't find any resource:
                     throw new AccessException("resource name invalid!");
                 }
-                
+
                 authManager.auth(new Permission(resource, action), authManager.login(req));
-                
+
             }
             chain.doFilter(request, response);
         } catch (AccessException e) {
@@ -143,7 +145,7 @@ public class AuthFilter implements Filter {
             return;
         }
     }
-    
+
     private ResourceParser getResourceParser(Class<? extends ResourceParser> parseClass)
             throws IllegalAccessException, InstantiationException {
         ResourceParser parser = parserInstance.get(parseClass);

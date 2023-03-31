@@ -16,6 +16,7 @@
 
 package com.alibaba.nacos.naming;
 
+import com.alibaba.nacos.sys.env.EnvUtil;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableScheduling;
@@ -28,8 +29,10 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 @SpringBootApplication(scanBasePackages = {"com.alibaba.nacos.naming", "com.alibaba.nacos.core"})
 public class NamingApp {
-    
+
     public static void main(String[] args) {
+        //todo 修改了单节点
+        EnvUtil.setIsStandalone(true);
         SpringApplication.run(NamingApp.class, args);
     }
 }
