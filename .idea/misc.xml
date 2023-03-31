@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/kafka-2.6" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/rocketmq-dashboard/pom.xml" />
         <option value="$PROJECT_DIR$/rocketmq-rocketmq-all-4.5.1/pom.xml" />
+        <option value="$PROJECT_DIR$/nacos-1.4.1/pom.xml" />
       </list>
     </option>
   </component>

@@ -12,9 +12,24 @@
       <option name="url" value="https://maven.aliyun.com/repository/public/" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="trendsi-public" />
+      <option name="name" value="trendsi-public" />
+      <option name="url" value="https://t-nexus.trendsi.cc/repository/maven-public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="MavenRepo" />
+      <option name="name" value="MavenRepo" />
+      <option name="url" value="https://repo.maven.apache.org/maven2/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="apache.snapshots" />
       <option name="name" value="Apache Snapshot Repository" />
       <option name="url" value="https://maven.aliyun.com/repository/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="MavenLocal" />
+      <option name="name" value="MavenLocal" />
+      <option name="url" value="file:$PROJECT_DIR$/../repository/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
@@ -27,9 +42,24 @@
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="maven2" />
+      <option name="name" value="maven2" />
+      <option name="url" value="https://maven.jeecg.org/nexus/content/repositories/jeecg" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="nexus-dev-snapshots" />
       <option name="name" value="Nexus Snapshots" />
       <option name="url" value="https://t-nexus.trendsi.cc/repository/maven-snapshots/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven" />
+      <option name="name" value="maven" />
+      <option name="url" value="https://maven.aliyun.com/nexus/content/groups/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven3" />
+      <option name="name" value="maven3" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
     </remote-repository>
   </component>
 </project>

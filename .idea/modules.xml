@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka-1.4.x.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka-1.4.x.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jmh-benchmarks/kafka-2.6.jmh-benchmarks.main.iml" filepath="$PROJECT_DIR$/.idea/modules/jmh-benchmarks/kafka-2.6.jmh-benchmarks.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/share.iml" filepath="$PROJECT_DIR$/.idea/share.iml" />
     </modules>
   </component>
